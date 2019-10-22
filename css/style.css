@@ -1,0 +1,185 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ====================================================== */
+
+.wrap {
+  width: 500px;
+  height: 300px;
+  margin: 100px auto;
+  background: #76FEC5;
+}
+.left {
+  margin-left: 75px;
+  margin-top: 100px;
+  color: #004156;
+  position: relative;
+  float: left;
+}
+/* .text_1 {
+  font-weight: bold;
+  font-size: 30px;
+  transform: rotate(90deg);
+  position: absolute;
+  left: -105px;
+  top: 35px;
+  white-space: nowrap;
+} */
+.text_1 {
+  font-weight: bold;
+  font-size: 30px;
+  /* transform: rotate(90deg); */
+  writing-mode: vertical-rl;
+  position: absolute;
+  left: -18px;
+  top: -48px;
+  white-space: nowrap;
+}
+.text_2 {
+  font-family: Verdana;
+  position: absolute;
+  left: 20px;
+  top: -50px;
+  line-height: 1.5;
+}
+.right {
+  background: #fff;
+  width: 298px;
+  height: 198px;
+  float: left;
+  color: #2398AB;
+  border: 1px solid #D7E1E9;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 15px 0;
+  font-family: 'Noto Serif TC';
+  margin: 50px 0 0 70px;
+  position: relative;
+  overflow: hidden;
+}
+.logo {
+  margin-bottom: 10px;
+}
+.logo img {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.title {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+.title p span {
+  font-family: 'Courier New';
+  font-weight: 500;
+}
+.title .name {
+  font-family: 'Anton';
+  font-size: 26px;
+  margin-left: 50px;
+}
+.company {
+  font-size: 12px;
+  margin-left: 20px;
+  line-height: 1.4;
+  /* overflow: hidden; */
+}
+.a, .b, .c {
+  position:relative;
+  width:100px;
+  height:0;
+  border-width:0 50px 87px;
+  border-style:solid;
+}
+.a:before, .b:before, .c:before {
+  position:absolute;
+  content:"";
+  /* top: 87px; 中間會有一條白線 */
+  top:86px;
+  left:-50px;
+  width:100px;
+  height:0;
+  background:none;
+  border-width:87px 50px 0;
+  border-style:solid;
+}
+.pic1 {
+  position: absolute;
+  left: 185px;
+  top: -40px;
+  transform: scale(0.5);
+}
+.a {
+  border-color:transparent transparent #004156;
+}
+.a:before{    
+  border-color:#004156 transparent transparent;
+}
+.pic2 {
+  position: absolute;
+  left: 180px;
+  top: 45px;
+  transform: scale(0.4);
+}
+.b{
+  border-color:transparent transparent #1E3C00;
+}
+.b:before{   
+  border-color:#1E3C00 transparent transparent;
+}
+.pic3 {
+  position: absolute;
+  left: 128px;
+  top: 13.15px;
+  transform: scale(0.3);
+}
+.c{
+  border-color:transparent transparent #BEF761;
+}
+.c:before{    
+  border-color:#BEF761 transparent transparent;
+}
+.clearfix {
+  clear: both;
+}
